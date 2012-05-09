@@ -25,7 +25,7 @@ end
 gem 'jquery-rails'
 
 # More robust webserver
-gem 'tiny'
+gem 'thin'
 
 group :test do
 	gem 'capybara', '1.1.2'
