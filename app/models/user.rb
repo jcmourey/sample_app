@@ -22,7 +22,9 @@ class User < ActiveRecord::Base
 
   validates :name, presence: true, length: { maximum: 50 }
   validates :email, presence: true, email: true, uniqueness: { case_sensitive: false }
-  validates :password, presence: true, length: { minimum: 6 }
+
+# no need to test for presence again, that's done already with has_secure_password above
+  validates :password, length: { minimum: 6 }
   validates :password_confirmation, presence: true
 
 end

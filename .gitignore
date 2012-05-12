@@ -24,3 +24,6 @@ doc/
 .project
 .DS_Store
 bundler_stubs/
+
+# Ignore precompiled assets
+public/assets/

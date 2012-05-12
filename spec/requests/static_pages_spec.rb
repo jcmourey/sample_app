@@ -12,45 +12,45 @@ describe "Static pages" do
 
   describe "Home page" do
     before { visit root_path }
-    let(:heading)    { 'Sample App' }
+    let(:heading)    { I18n.t(:App_Name) }
     let(:page_title) { '' }
 		it_should_behave_like "all static pages"
-		it { should_not have_selector('title', text: '| Home') }
+		it { should_not have_selector('title', text: "| ${I18n.t :home}") }
 	end
 
 	describe "Help page" do
     before { visit help_path }
-    let(:heading)    { 'Help' }
-    let(:page_title) { 'Help' }
+    let(:heading)    { I18n.t :help }
+    let(:page_title) { I18n.t :help }
     it_should_behave_like "all static pages"
   end
 
 	describe "About page" do
     before { visit about_path }
-    let(:heading)    { 'About' }
-    let(:page_title) { 'About' }
+    let(:heading)    { I18n.t :about }
+    let(:page_title) { I18n.t :about }
     it_should_behave_like "all static pages"
   end
 
 	describe "Contact page" do
     before { visit contact_path }
-    let(:heading)    { 'Contact' }
-    let(:page_title) { 'Contact' }
+    let(:heading)    { I18n.t :contact }
+    let(:page_title) { I18n.t :contact }
     it_should_behave_like "all static pages"
   end
 
   it "should have the right links on the layout" do
     visit root_path
-    click_link "About"
-    page.should have_selector 'title', text: full_title('About Us')
-    click_link "Help"
-    page.should have_selector 'title', text: full_title('Help')
-    click_link "Contact"
-    page.should have_selector 'title', text: full_title('Contact')
-    click_link "Home"
-    click_link "Sign up now!"
-    page.should have_selector 'title', text: full_title('Sign up')
-    click_link "sample app"
+    click_link I18n.t(:about)
+    page.should have_selector 'title', text: full_title(I18n.t :about_us)
+    click_link I18n.t(:help)
+    page.should have_selector 'title', text: full_title(I18n.t :help)
+    click_link I18n.t(:contact)
+    page.should have_selector 'title', text: full_title(I18n.t :contact)
+    click_link I18n.t(:home)
+    click_link I18n.t(:sign_up)
+    page.should have_selector 'title', text: full_title(I18n.t :sign_up)
+    click_link I18n.t(:app_name)
     page.should have_selector 'title', text: full_title('')
   end
 end

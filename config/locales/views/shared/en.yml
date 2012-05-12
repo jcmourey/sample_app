@@ -1,0 +1,4 @@
+en:
+  form_errors:
+    one: The form contains one error
+    other: The form contains %{count} errors

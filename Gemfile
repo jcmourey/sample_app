@@ -9,6 +9,8 @@ gem 'bootstrap-sass', '2.0.0'
 gem 'jquery-rails'
 gem 'valid_email'
 gem 'bcrypt-ruby', '3.0.1'
+gem 'http_accept_language', '1.0.2'
+#gem 'rails_admin'
 
 # More robust webserver
 gem 'thin'
@@ -34,7 +36,6 @@ group :assets do
 end
 
 
-
 group :test do
 	gem 'rspec-rails', '2.9.0'
 	gem 'capybara', '1.1.2'
@@ -43,6 +44,7 @@ group :test do
 # Test gems on Macintosh OS X
 	gem 'rb-fsevent', '>= 0.4.3.1', :require => false
 	gem 'growl', '1.0.3'
+  gem 'factory_girl_rails', '1.4.0'
 end
 
 # Use PostGreSQL in both production and development environments

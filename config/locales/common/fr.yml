@@ -1,0 +1,8 @@
+# Localization file for French. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+fr:
+  base_title: Ruby on Rails Application d'Exemple du Tutoriel
+  app_name: application d'exemple
+
+

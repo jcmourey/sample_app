@@ -1,0 +1,4 @@
+fr:
+  form_errors:
+    one: Le formulaire contient une erreur
+    other: Le formulaire contient %{count} erreurs

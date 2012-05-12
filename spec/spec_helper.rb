@@ -40,10 +40,16 @@ Spork.prefork do
   end
 end
 
+
 Spork.each_run do
   # This code will be run each time you run your specs.
 
+  # Pick a random locale each time the test is run
+  I18n.locale = I18n.available_locales.shuffle.first
+  puts "\n-- Testing locale #{I18n.locale.upcase}"
+
 end
+
 
 # --- Instructions ---
 # Sort the contents of this file into a Spork.prefork and a Spork.each_run
