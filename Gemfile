@@ -6,10 +6,19 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'bootstrap-sass', '2.0.0'
+gem 'jquery-rails'
+gem 'valid_email'
+gem 'bcrypt-ruby', '3.0.1'
+
+# More robust webserver
+gem 'thin'
+
+
 
 group :development do
 	gem 'rspec-rails', '2.9.0'
 	gem 'guard-rspec', '0.5.5'
+  gem 'annotate', '~> 2.4.1.beta'
 end
 
 # Gems used only for assets and not required
@@ -24,10 +33,7 @@ group :assets do
 
 end
 
-gem 'jquery-rails'
 
-# More robust webserver
-gem 'thin'
 
 group :test do
 	gem 'rspec-rails', '2.9.0'
