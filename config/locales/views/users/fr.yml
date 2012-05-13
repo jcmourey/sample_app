@@ -1,6 +1,10 @@
 fr:
   sign_up: Inscription
-  sign_in: Connexion
-  submit: Créer mon compte
+  create_account: Créer mon compte
   confirmation: Confirmation
+  new_user?: Nouvel utilisateur ?
   welcome_new_user: "Bienvenue à l'Application d'Exemple !"
+  users: Utilisateurs
+  account: Compte
+  profile: Profil
+  settings: Préférences

@@ -4,5 +4,6 @@
 fr:
   base_title: Ruby on Rails Application d'Exemple du Tutoriel
   app_name: application d'exemple
-
-
+  error: erreur
+  email: Adresse mail
+  password: Mot de passe

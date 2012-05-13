@@ -9,16 +9,16 @@
       <%= f.label :name %>
       <%= f.text_field :name %>
 
-      <i class="icon-envelope"></i><%= f.label :email %>
+      <i class="icon-envelope"></i><%= f.label t(:email) %>
       <%= f.text_field :email %>
 
-      <%= f.label :password %>
+      <%= f.label t(:password) %>
       <%= f.password_field :password %>
 
       <%= f.label :password_confirmation %>
       <%= f.password_field :password_confirmation %>
 
-      <%= f.submit t(:submit), class: "btn btn-large btn-primary" %>
+      <%= f.submit t(:create_account), class: "btn btn-large btn-primary" %>
   <% end %>
   </div>
   </div>
